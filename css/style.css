@@ -16,7 +16,7 @@ body {
     background: #1A1A1A;
     background: linear-gradient(
         100deg,
-        #ccc,
+        rgb(4, 99, 111),
         #1A1A1A
     );
     color: white;
@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    text-shadow: 2px 2px 15px rgb(176, 230, 255);
+    text-shadow: 2px 2px 15px rgb(2, 27, 40);
     font-size: 1.2rem;
 }
 
@@ -57,6 +57,11 @@ form button {
 form button:hover {
     background: #1A1A1A;
     color: white;
+}
+
+.adicionarTarefa{
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .todo-container {
@@ -145,7 +150,7 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #1A1A1A;
     width: 15rem;
     cursor: pointer;
@@ -177,4 +182,48 @@ select {
 .checked
 {
     text-decoration: line-through;
+}
+
+
+@media (max-width: 480px){
+    #formulario{    
+        max-width: 70vw;
+        margin-left: 5vw;
+        flex-flow: row wrap;
+    }
+
+    .adicionarTarefa{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .todo-input{
+        max-width: 80vw;
+        margin-left: 20vw;
+    }
+
+    .select {
+        margin: 1rem;
+        position: relative;
+        overflow: visible;
+        margin-left: 20vw;
+        font-size: 1.1em;
+    
+    }
+
+
+    .select::after {
+        position: absolute;
+        background: #1A1A1A;
+        left: 76%;
+        padding: 1.2rem;
+        max-width: 5vw;
+        height: 1.8vh;
+    }
+
+    .todo{
+        font-size: 1em;
+    }
+
+
 }

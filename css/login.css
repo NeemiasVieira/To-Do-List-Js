@@ -4,8 +4,6 @@ body
     background-image: url("..//img/bg_03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
 }
 
 h1
@@ -111,4 +109,19 @@ button
     font-weight: 900;   
     font-size: 20px;
     
+}
+
+@media (max-width: 480px){
+    body{
+        background-image: linear-gradient(to right,#000, #111,#222);
+        height: 100vh;
+    }
+
+    form{
+        background-image: linear-gradient(#FF5100, red, rgb(174, 0, 93));
+    }
+
+    h1{
+        font-size: 40px;
+    }
 }
